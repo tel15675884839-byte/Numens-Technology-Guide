@@ -58,7 +58,7 @@ export default function App() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight">
-            Technical Manual Center
+            Support Center
           </h2>
           <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto md:mx-0 leading-relaxed px-2 md:px-0">
             Select the corresponding fire system model to enter the NotebookLM AI interactive interface. Supports 24/7 AI troubleshooting and installation guidance.
@@ -215,7 +215,7 @@ export default function App() {
           {/* Bottom Section: Copyright only */}
           <div className="pt-8 border-t border-white/5">
             <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-[10px] md:text-xs text-zinc-500 font-medium text-center md:text-left">
-              <span>© 2024 Ningbo Ambest Electronics Co Ltd</span>
+              <span>© 2026 Ningbo Ambest Electronics Co Ltd</span>
               <span className="hidden md:inline text-zinc-700">|</span>
               <span>(中国浙江省，宁波市，鄞州区 邮编：315137)</span>
             </div>
