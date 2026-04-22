@@ -58,7 +58,7 @@ export default function App() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight">
-            Support Center
+            Numens Support Center
           </h2>
           <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto md:mx-0 leading-relaxed px-2 md:px-0">
             Select the corresponding fire system model to enter the NotebookLM AI interactive interface. Supports 24/7 AI troubleshooting and installation guidance.
