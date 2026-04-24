@@ -137,7 +137,7 @@ export default function App() {
                   target="_blank"
                   className="w-full py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-bold text-center transition-all shadow-lg shadow-orange-900/40 active:scale-[0.98] text-sm md:text-base sticky bottom-0 md:static"
                 >
-                  Confirm and Open NotebookLM Manual
+                  Ask your questions here
                 </a>
               </div>
 
