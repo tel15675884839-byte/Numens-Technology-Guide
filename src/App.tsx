@@ -5,15 +5,15 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { 
-  ShieldAlert, 
-  Wind, 
-  Flame, 
-  Compass, 
-  ChevronRight, 
-  MousePointerClick, 
-  Lightbulb, 
-  BookOpen, 
+import {
+  ShieldAlert,
+  Wind,
+  Flame,
+  Compass,
+  ChevronRight,
+  MousePointerClick,
+  Lightbulb,
+  BookOpen,
   HelpCircle,
   X,
   MapPin,
@@ -45,7 +45,7 @@ export default function App() {
       <nav className="p-4 md:p-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3 md:gap-4">
-            <img src="/branding/logo-long.png" alt="Numens Logo" className="h-8 md:h-10 object-contain" />
+            <img src="/branding/logo-long.png" alt="Numens Logo" className="h-[42px] md:h-[52px] object-contain" />
           </div>
         </div>
       </nav>
@@ -60,9 +60,6 @@ export default function App() {
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight">
             Numens Support Center
           </h2>
-          <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto md:mx-0 leading-relaxed px-2 md:px-0">
-            Select the corresponding fire system model to enter the NotebookLM AI interactive interface. Supports 24/7 AI troubleshooting and installation guidance.
-          </p>
         </motion.div>
       </header>
 
@@ -103,22 +100,22 @@ export default function App() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 flex items-end md:items-center justify-center p-0 md:p-12"
           >
-          <motion.div
-            initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
-            animate={{ opacity: 1, backdropFilter: "blur(24px)" }}
-            exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="absolute inset-0 bg-black/40"
-            onClick={() => setSelectedManual(null)}
-          />
-            
+            <motion.div
+              initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
+              animate={{ opacity: 1, backdropFilter: "blur(24px)" }}
+              exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="absolute inset-0 bg-black/40"
+              onClick={() => setSelectedManual(null)}
+            />
+
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: "100%", opacity: 0 }}
               className="relative w-full max-w-6xl glass-card md:rounded-2xl rounded-t-[2rem] overflow-hidden shadow-2xl flex flex-col md:grid md:grid-cols-12 h-[92vh] md:h-fit md:max-h-[85vh]"
             >
-              <button 
+              <button
                 onClick={() => setSelectedManual(null)}
                 className="absolute top-6 right-6 p-2 text-zinc-500 hover:text-white transition-colors z-30 bg-zinc-900/50 md:bg-transparent rounded-full"
               >
@@ -135,7 +132,7 @@ export default function App() {
                   <p className="text-zinc-400 text-xs md:text-sm leading-relaxed mb-6 md:mb-10">{selectedManual.description}</p>
                 </div>
 
-                <a 
+                <a
                   href={selectedManual.url}
                   target="_blank"
                   className="w-full py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-bold text-center transition-all shadow-lg shadow-orange-900/40 active:scale-[0.98] text-sm md:text-base sticky bottom-0 md:static"
